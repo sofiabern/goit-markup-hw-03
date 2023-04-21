@@ -184,7 +184,8 @@ ol {
 .duties {
   padding-bottom: 120px;
 }
-.duties-title .team-title {
+.duties-title,
+.team-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
