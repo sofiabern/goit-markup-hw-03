@@ -29,6 +29,29 @@ body {
   cursor: pointer;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,22 +66,6 @@ body {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-}
-
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -66,9 +73,13 @@ ol {
   outline: 2px solid palevioletred;
 }
 /* Header */
-
+.header-flex {
+  display: flex;
+}
 /* Logo */
 .header-logo {
+  margin-right: 76px;
+
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -82,7 +93,19 @@ ol {
   color: var(--secondary-text-color);
 }
 
-.header-nav-item {
+.header-nav {
+  display: flex;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-nav-link {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -93,8 +116,8 @@ ol {
 /* color: var(--accent-color); */
 /* } */
 
-.header-nav-item:hover,
-.header-nav-item:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: #404bbf;
 }
 
@@ -102,14 +125,23 @@ ol {
   font-style: normal;
 }
 
-.header-contacts-item {
+.header-contacts-list {
+  display: flex;
+}
+
+.header-contacts-number {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.header-contacts-link {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
 }
 
-.header-contacts-item:hover,
-.header-contacts-item:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: #404bbf;
 }
 
@@ -117,34 +149,27 @@ ol {
 
 /* Hero section*/
 .hero {
-  background-color: var(--secondary-bg-color);
-
   padding-top: 188px;
   padding-bottom: 188px;
+
+  background-color: var(--secondary-bg-color);
 }
 
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-
-  max-width: 496px;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-btn {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
   display: block;
   min-width: 169px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -153,6 +178,13 @@ ol {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .hero-btn:hover,
@@ -162,22 +194,17 @@ ol {
 }
 
 /* Features section */
-
-.feature {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .feature-list-item {
   width: 264px;
 }
 .feature-subtitle {
+  margin-bottom: 8px;
+
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
-  margin-bottom: 8px;
 }
 
 /* Duties section */
@@ -186,6 +213,8 @@ ol {
 }
 .duties-title,
 .team-title {
+  margin-bottom: 72px;
+
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -193,15 +222,11 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 72px;
 }
 
 /* Team section */
 .team {
   background-color: #f4f4fd;
-
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-item-bg {
@@ -233,6 +258,9 @@ ol {
 
 /* Logo */
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -240,9 +268,6 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -250,9 +275,9 @@ ol {
 }
 
 .footer-text {
-  color: #f4f4fd;
-
   width: 264px;
+
+  color: #f4f4fd;
 }
 
 /* Portfolio-page */
@@ -263,7 +288,6 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-
   letter-spacing: 0.04em;
 }
 .filter-btn:hover,
