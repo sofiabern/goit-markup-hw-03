@@ -167,8 +167,8 @@ img {
 
 /* Hero section*/
 .hero {
-  /* padding-top: 188px; */
-  /* padding-bottom: 188px; */
+  padding-top: 188px;
+  padding-bottom: 188px;
 
   background-color: var(--secondary-bg-color);
 }
