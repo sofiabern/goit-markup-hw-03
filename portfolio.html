@@ -22,34 +22,36 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="container header-flex">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo link"
             >Web<span class="header-logo-accent">Studio</span></a
           >
           <ul class="header-nav-list list">
-            <li>
+            <li class="header-nav-item">
               <a href="./index.html" class="header-nav-link link">Studio</a>
             </li>
-            <li>
+            <li class="header-nav-item">
               <a href="./portfolio.html" class="header-nav-link link"
                 >Portfolio</a
               >
             </li>
-            <li><a href="" class="header-nav-link link">Contacts</a></li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-link link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="header-contacts">
           <ul class="header-contacts-list list">
-            <li>
+            <li class="header-contacts-item">
               <a
                 href="mailto:info@devstudio.com"
                 class="header-contacts-link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="header-contacts-item">
               <a href="tel:+110001111111" class="header-contacts-link link"
                 >+11 (000) 111-11-11</a
               >
@@ -60,10 +62,10 @@
     </header>
     <!-- Main -->
     <main>
-      <section>
+      <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="list">
+          <ul class="filter-btn-list list">
             <li>
               <button type="button" class="button filter-btn">All</button>
             </li>
@@ -79,9 +81,9 @@
             <li>
               <button type="button" class="button filter-btn">Marketing</button>
             </li>
-            <!-- Works section -->
+            <!-- Works -->
           </ul>
-          <ul class="list">
+          <ul class="works-list list">
             <li>
               <a href="" class="link">
                 <img
@@ -90,9 +92,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Banking App Interface Concept</h2>
-                <p class="works-descr">App</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Banking App Interface Concept</h2>
+                  <p class="works-descr">App</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -102,9 +106,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Cashless Payment</h2>
-                <p class="works-descr">Marketing</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Cashless Payment</h2>
+                  <p class="works-descr">Marketing</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -114,9 +120,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Meditation App</h2>
-                <p class="works-descr">App</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Meditation App</h2>
+                  <p class="works-descr">App</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -126,9 +134,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Taxi Service</h2>
-                <p class="works-descr">Marketing</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Taxi Service</h2>
+                  <p class="works-descr">Marketing</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -138,9 +148,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Screen Illustrations</h2>
-                <p class="works-descr">Design</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Screen Illustrations</h2>
+                  <p class="works-descr">Design</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -150,9 +162,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Online Courses</h2>
-                <p class="works-descr">Marketing</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Online Courses</h2>
+                  <p class="works-descr">Marketing</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -162,9 +176,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Instagram Stories Concept</h2>
-                <p class="works-descr">Design</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Instagram Stories Concept</h2>
+                  <p class="works-descr">Design</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -174,9 +190,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Organic Food</h2>
-                <p class="works-descr">Web Site</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Organic Food</h2>
+                  <p class="works-descr">Web Site</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="" class="link">
@@ -186,9 +204,11 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="works-subtitle">Fresh Coffee</h2>
-                <p class="works-descr">Web Site</p></a
-              >
+                <div class="works-container">
+                  <h2 class="works-subtitle">Fresh Coffee</h2>
+                  <p class="works-descr">Web Site</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
